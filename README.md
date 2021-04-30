@@ -2,9 +2,11 @@
 
 This a repo with my collection of Jonas's JS Course Work.
 
-Contains all the Challenges and Assignments.
+- [Udemy Course Link](https://www.udemy.com/course/the-complete-javascript-course/)
 
-Contains a coding template which I used for all the challenges.
+- Contains all the Challenges and Assignments.
+
+- Contains a coding template which I used for all the challenges.
 
 ## Usage of the template
 
