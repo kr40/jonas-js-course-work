@@ -8,9 +8,11 @@ This a repo with my collection of Jonas's JS Course Work.
 
 - Contains a coding template which I used for all the challenges.
 
-## Usage of the template
+- It comes with `eslint`, `stylelint` & `prettier` pre-configured. You can run `npm i -g eslint stylelint prettier` to install them.
 
-- `npm run dev` for the development server with live reload.
+- Run `npm i` to install all the dependencies.
 
-It comes with `eslint`, `stylelint` & `prettier` pre-configured. You can run `npm i -g eslint stylelint prettier` to install them.
+Also, I recommend to install _Live Server_ , _Stylelint_, _Eslint_ & _Prettier_ plugin for VS Code.
+
+
 
