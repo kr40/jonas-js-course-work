@@ -1,2 +1,5 @@
-# jonas-js-course-work
- My repo with all the challenges and assignments from Jonas's JS Course
+# Jonas's Javascript Course Work
+
+This a repo with my collection of Jonas's JS Course Work.
+
+Contains all the Challenges and Assignments.
