@@ -14,6 +14,6 @@ This a repo with my collection of Jonas's Javascript Course Work.
 
 - Run `npm i` to install all the dependencies.
 
--Run the server with `Live Server` extension.
+- Run the server with `Live Server` extension.
 
 Also, I recommend you to install _Live Server_ , _Stylelint_, _Eslint_ & _Prettier_ plugins for VS Code.
