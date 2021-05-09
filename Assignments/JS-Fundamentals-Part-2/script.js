@@ -109,8 +109,6 @@ capital called ${this.capital}.`
 	},
 	checkIsland: function () {
 		this.isIsland = this.neighbours.length === 0 ? true : false;
-		// Even simpler version (see why this works...)
-		// this.isIsland = !Boolean(this.neighbours.length);
 	},
 };
 myCountry2.describe();
