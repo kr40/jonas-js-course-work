@@ -5,7 +5,7 @@
 const describeCountry = (country, population, capitalCity) =>
 	console.log(`${country} has ${population} million population and it's capital is ${capitalCity}`);
 
-const describeIndia = describeCountry('India', 1409, 'Delhi');
+describeCountry('India', 1409, 'Delhi');
 
 //* LECTURE: Function Declaration vs Expressions
 
