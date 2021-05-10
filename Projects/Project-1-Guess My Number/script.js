@@ -1,4 +1,5 @@
 'use strict';
+
 /*
 document.querySelector('.message').textContent = '🎉 Correct secretNumber';
 document.querySelector('.secretNumber').textContent = 13;
