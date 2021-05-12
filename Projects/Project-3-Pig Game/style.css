@@ -1,10 +1,8 @@
 /** Imports  */
 
-@import url(https://fonts.googleapis.com/css?family=Overpass:100,100italic,200,200italic,300,300italic,regular,italic,600,600italic,700,700italic,800,800italic,900,900italic);
-
-/** Your styles go here */
-
 @import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+
+/** Your Styles Go Here */
 
 html {
 	font-size: 62.5%;
@@ -21,7 +19,8 @@ body {
 	background-image: linear-gradient(to top left, hsl(290, 41%, 36%) 0%, hsl(358, 61%, 46%) 100%);
 }
 
-/* LAYOUT */
+/** LAYOUT */
+
 main {
 	position: relative;
 	display: flex;
@@ -44,7 +43,8 @@ main {
 	transition: all 0.75s;
 }
 
-/* ELEMENTS */
+/** ELEMENTS */
+
 .name {
 	position: relative;
 	margin-bottom: 1rem;
@@ -72,10 +72,6 @@ main {
 	font-weight: 400;
 }
 
-.player--active .current {
-	opacity: 1;
-}
-
 .current {
 	width: 65%;
 	padding: 2rem;
@@ -85,6 +81,10 @@ main {
 	background-color: hsl(343, 57%, 50%);
 	opacity: 0.8;
 	transition: all 0.75s;
+}
+
+.player--active .current {
+	opacity: 1;
 }
 
 .current-label {
@@ -98,7 +98,8 @@ main {
 	font-size: 3.5rem;
 }
 
-/* ABSOLUTE POSITIONED ELEMENTS */
+/** ABSOLUTE POSITIONED ELEMENTS */
+
 .btn {
 	position: absolute;
 	left: 50%;
