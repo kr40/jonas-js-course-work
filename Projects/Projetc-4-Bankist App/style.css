@@ -1,0 +1,287 @@
+@import url(https://fonts.googleapis.com/css?family=Poppins:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic);
+
+html {
+	font-size: 62.5%;
+}
+
+body {
+	height: 100vh;
+	padding: 2rem;
+	color: hsl(0, 0%, 27%);
+	font-family: 'Poppins', sans-serif;
+	background-color: hsl(0, 0%, 95%);
+}
+
+nav {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 0 2rem;
+}
+
+.welcome {
+	font-weight: 500;
+	font-size: 1.9rem;
+}
+
+.logo {
+	height: 5.25rem;
+}
+
+.login {
+	display: flex;
+}
+
+.login__input {
+	width: 12rem;
+	margin-right: 1rem;
+	padding: 0.5rem 2rem;
+	border: none;
+	border: 1px solid hsl(0, 0%, 100%);
+	border-radius: 10rem;
+	color: inherit;
+	font-size: 1.6rem;
+	font-family: inherit;
+	text-align: center;
+	transition: all 0.3s;
+}
+
+.login__input:focus {
+	border: 1px solid hsl(0, 0%, 80%);
+	outline: none;
+}
+
+.login__input::placeholder {
+	color: hsl(0, 0%, 73%);
+}
+
+.login__btn {
+	border: none;
+	color: inherit;
+	font-size: 2.2rem;
+	background: none;
+	cursor: pointer;
+	transition: all 0.3s;
+}
+
+.btn--sort {
+	margin-left: auto;
+	border: none;
+	font-weight: 500;
+	font-size: 1.3rem;
+	background: none;
+	cursor: pointer;
+}
+
+.login__btn:hover,
+.login__btn:focus,
+.btn--sort:hover,
+.btn--sort:focus {
+	color: hsl(0, 0%, 47%);
+	outline: none;
+}
+
+/* MAIN */
+.app {
+	position: relative;
+	display: grid;
+	grid-template-rows: auto repeat(3, 15rem) auto;
+	grid-template-columns: 4fr 3fr;
+	gap: 2rem;
+	max-width: 100rem;
+	margin: 4rem auto;
+
+	/* NOTE This creates the fade in/out animation */
+	opacity: 0;
+	transition: all 1s;
+}
+
+.balance {
+	display: flex;
+	grid-column: 1 / span 2;
+	align-items: flex-end;
+	justify-content: space-between;
+	margin-bottom: 2rem;
+}
+
+.balance__label {
+	margin-bottom: -0.2rem;
+	font-weight: 500;
+	font-size: 2.2rem;
+}
+
+.balance__date {
+	color: hsl(0, 0%, 53%);
+	font-size: 1.4rem;
+}
+
+.balance__value {
+	font-weight: 400;
+	font-size: 4.5rem;
+}
+
+/* MOVEMENTS */
+.movements {
+	grid-row: 2 / span 3;
+	border-radius: 1rem;
+	overflow: scroll;
+	background-color: hsl(0, 0%, 100%);
+}
+
+.movements__row {
+	display: flex;
+	align-items: center;
+	padding: 2.25rem 4rem;
+	border-bottom: 1px solid hsl(0, 0%, 93%);
+}
+
+.movements__type {
+	margin-right: 2rem;
+	padding: 0.1rem 1rem;
+	border-radius: 10rem;
+	color: hsl(0, 0%, 100%);
+	font-weight: 500;
+	font-size: 1.1rem;
+	text-transform: uppercase;
+}
+
+.movements__date {
+	color: hsl(0, 0%, 40%);
+	font-weight: 500;
+	font-size: 1.1rem;
+	text-transform: uppercase;
+}
+
+.movements__type--deposit {
+	background-image: linear-gradient(to top left, hsl(157, 52%, 46%), hsl(92, 69%, 62%));
+}
+
+.movements__type--withdrawal {
+	background-image: linear-gradient(to top left, hsl(345, 78%, 53%), hsl(357, 100%, 67%));
+}
+
+.movements__value {
+	margin-left: auto;
+	font-size: 1.7rem;
+}
+
+/* SUMMARY */
+.summary {
+	display: flex;
+	grid-row: 5 / 6;
+	align-items: baseline;
+	margin-top: 1rem;
+	padding: 0 0.3rem;
+}
+
+.summary__label {
+	margin-right: 0.8rem;
+	font-weight: 500;
+	font-size: 1.2rem;
+	text-transform: uppercase;
+}
+
+.summary__value {
+	margin-right: 2.5rem;
+	font-size: 2.2rem;
+}
+
+.summary__value--in,
+.summary__value--interest {
+	color: hsl(128, 47%, 59%);
+}
+
+.summary__value--out {
+	color: hsl(352, 90%, 62%);
+}
+
+/* OPERATIONS */
+.operation {
+	padding: 3rem 4rem;
+	border-radius: 1rem;
+	color: hsl(0, 0%, 20%);
+}
+
+.operation--transfer {
+	background-image: linear-gradient(to top left, hsl(41, 100%, 51%), hsl(48, 100%, 51%));
+}
+
+.operation--loan {
+	background-image: linear-gradient(to top left, hsl(157, 52%, 46%), hsl(92, 69%, 62%));
+}
+
+.operation--close {
+	background-image: linear-gradient(to top left, hsl(345, 78%, 53%), hsl(357, 100%, 67%));
+}
+
+h2 {
+	margin-bottom: 1.5rem;
+	color: hsl(0, 0%, 20%);
+	font-weight: 600;
+	font-size: 1.7rem;
+}
+
+.form {
+	display: grid;
+	grid-template-rows: auto auto;
+	grid-template-columns: 2.5fr 2.5fr 1fr;
+	gap: 0.4rem 1rem;
+}
+
+/* Exceptions for interest */
+.form.form--loan {
+	grid-template-columns: 2.5fr 1fr 2.5fr;
+}
+.form__label--loan {
+	grid-row: 2;
+}
+
+/* End exceptions */
+
+.form__input {
+	width: 100%;
+	padding: 0.3rem 1rem;
+	border: none;
+	border-radius: 0.7rem;
+	color: hsl(0, 0%, 20%);
+	font-size: 1.5rem;
+	font-family: inherit;
+	text-align: center;
+	background-color: rgba(255, 255, 255, 0.4);
+	transition: all 0.3s;
+}
+
+.form__input:focus {
+	background-color: rgba(255, 255, 255, 0.6);
+	outline: none;
+}
+
+.form__label {
+	font-size: 1.3rem;
+	text-align: center;
+}
+
+.form__btn {
+	border: none;
+	border-radius: 0.7rem;
+	font-size: 1.8rem;
+	background-color: hsl(0, 0%, 100%);
+	cursor: pointer;
+	transition: all 0.3s;
+}
+
+.form__btn:focus {
+	background-color: rgba(255, 255, 255, 0.8);
+	outline: none;
+}
+
+.logout-timer {
+	margin-top: 1.9rem;
+	padding: 0 0.3rem;
+	font-size: 1.25rem;
+	text-align: right;
+}
+
+.timer {
+	font-weight: 600;
+}
