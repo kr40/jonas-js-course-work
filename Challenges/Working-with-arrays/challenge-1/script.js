@@ -1,6 +1,4 @@
 'use strict';
-const dogsJulia = [];
-const dogsKate = [];
 
 const checkDogs = function (dogsJulia, dogsKate) {
 	const dogsJuliaCopy = dogsJulia.slice(1, 3);
