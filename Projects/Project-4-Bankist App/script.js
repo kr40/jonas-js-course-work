@@ -76,6 +76,27 @@ const displayMovements = function (movements) {
 
 displayMovements(account1.movements);
 
+console.log(accounts);
+
+const calcDisplayBalance = function (movements) {
+	const balance = movements.reduce((acc, mov) => acc + mov, 0);
+	labelBalance.textContent = `${balance} EUR`;
+};
+
+calcDisplayBalance(account1.movements);
+
+const createUsernames = function (accs) {
+	accs.forEach(function (acc) {
+		acc.username = acc.owner
+			.toLowerCase()
+			.split(' ')
+			.map((name) => name[0])
+			.join('');
+	});
+};
+
+createUsernames(accounts);
+
 // ///////////////////////////////////////////////
 // ///////////////////////////////////////////////
 // LECTURES
@@ -107,3 +128,26 @@ const movements = [200, 450, -400, 3000, -650, -130, 70, 1300];
 // 		console.log(`Movement ${i + 1}: You withdrew ${Math.abs(mov)}`);
 // 	}
 // });
+
+const eurToUsd = 1.1;
+
+// const movementsUSD = movements.map(function (mov) {
+// 	return mov * eurToUsd;
+// });
+
+const movementsUSD = movements.map((mov) => mov * eurToUsd);
+
+console.log(movements);
+console.log(movementsUSD);
+
+const deposits = movements.filter(function (mov) {
+	return mov > 0;
+});
+
+console.log(deposits);
+
+const balance = movements.reduce(function (acc, cur, i, arr) {
+	return acc + cur;
+}, 0);
+
+console.log(balance);
