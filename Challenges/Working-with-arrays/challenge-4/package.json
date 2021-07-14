@@ -2,10 +2,10 @@
 	"name": "jonas-js-course",
 	"version": "1.0.0",
 	"devDependencies": {
-		"eslint": "^7.25.0",
+		"eslint": "^7.30.0",
 		"eslint-config-google": "^0.14.0",
 		"eslint-config-prettier": "^8.3.0",
-		"eslint-plugin-import": "^2.22.1",
+		"eslint-plugin-import": "^2.23.4",
 		"stylelint": "^13.13.1",
 		"stylelint-color-format": "^1.1.0",
 		"stylelint-config-prettier": "^8.0.2",
