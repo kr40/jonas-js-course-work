@@ -1,5 +1,7 @@
 # Jonas's Javascript Course Work
 
+*NOTE - I am missing some Challenges as I was running out of time that I decided I will be completing the course in. I will surely get to them later on* 
+
 This a repo with my collection of Jonas's Javascript Course Work.
 
 - [Udemy Course Link](https://www.udemy.com/course/the-complete-javascript-course/)
